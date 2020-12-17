@@ -85,9 +85,11 @@ function App() {
       values={formValues}
       errors={formErrors}
       disabled={disabled}/>
+      <div className="friends">
       {users.map(user => {
         return <Users details={user} key={user.id}/>
       })}
+      </div>
     </div>
   );
 }
